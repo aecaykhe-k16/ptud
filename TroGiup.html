@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/kuga/image/upload/v1669707407/ptud/logo_episxp.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <title>Trợ giúp-Karaoke Nnice</title>
+    <style>
+      @font-face {
+        font-family: "MyFont";
+        src: url(assets/font/Mulish-Regular.ttf) format("truetype");
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "MyFont", Verdana, Tahoma;
+        scroll-behavior: smooth;
+      }
+      body {
+        position: relative;
+      }
+      header {
+        background-color: #f1f1f1;
+        border-bottom: 1px solid #acacac;
+        margin-bottom: 30px;
+      }
+      .header-title {
+        padding: 30px 30px 20px;
+        text-align: center;
+        font-size: 60px;
+        font-weight: 800;
+      }
+      .logo {
+        position: absolute;
+        top: 10px;
+        left: 50px;
+      }
+      .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f1f1f1;
+        padding-bottom: 10px;
+      }
+      .nav-item {
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #000;
+        list-style: none;
+      }
+
+      .nav-item a:hover {
+        color: rgb(255, 255, 255);
+        background-color: rgb(144, 144, 144);
+        border-radius: 5px;
+      }
+      .nav-item a {
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: #000;
+      }
+
+      .content {
+        padding: 20px 60px 0px 40px;
+        font-size: 18px;
+        line-height: 25px;
+      }
+
+      .content-section {
+        padding-left: 60px;
+        padding-right: 40px;
+      }
+
+      .content-title {
+        color: #000;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      img {
+        margin-left: 50px;
+      }
+
+      .login-img {
+        width: 50%;
+        object-fit: cover;
+      }
+
+      footer {
+        background-color: #f1f1f1;
+        padding: 30px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 50px;
+      }
+      footer > span {
+        color: rgb(164, 162, 162);
+        font-size: 15px;
+      }
+
+      .to-header {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      }
+      .to-header a i {
+        font-size: 40px;
+        color: rgb(73, 73, 73);
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px 1px rgb(117, 117, 117);
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <p class="header-title">Karaoke Nnice</p>
+      <img
+        class="logo"
+        src="https://res.cloudinary.com/kuga/image/upload/v1669707407/ptud/logo_episxp.png"
+        alt=""
+      />
+      <div class="menu">
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="#login" class="nav-link">Đăng nhập</a>
+          </li>
+          <li class="nav-item">
+            <a href="#employee" class="nav-link">Nhân viên</a>
+          </li>
+          <li class="nav-item">
+            <a href="#room" class="nav-link">Quản lý phòng</a>
+          </li>
+          <li class="nav-item">
+            <a href="#customer" class="nav-link">Khách hàng</a>
+          </li>
+          <li class="nav-item"><a href="#bill" class="nav-link">Hóa đơn</a></li>
+          <li class="nav-item">
+            <a href="#analys" class="nav-link">Thống kê</a>
+          </li>
+          <li class="nav-item">
+            <a href="#assignment" class="nav-link">Phân công</a>
+          </li>
+          <li class="nav-item">
+            <a href="#order" class="nav-link">Quản lý đặt phòng</a>
+          </li>
+          <li class="nav-item">
+            <a href="#service" class="nav-link">Dịch vụ</a>
+          </li>
+          <li class="nav-item">
+            <a href="#footer" class="nav-link">Thông tin</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div id="login" class="content">
+      <p class="content-title">1. Đăng nhập</p>
+      <div class="content-section">
+        <p>
+          - Để đăng nhập vào hệ thống, bạn cần phải có tài khoản. Nhân viên thêm
+          vào hệ thống sẽ có một tên đăng nhập và mật khẩu.
+        </p>
+        <img class="login-img" src="assets/TroGiup/login.png" alt="Đăng nhập" />
+        <p>
+          - Nhập tài khoản và mật khẩu vào chỗ trống, sau đó ấn nút đăng nhập.
+        </p>
+        <p>
+          - Nếu tài khoản và mật khẩu của nhân viên đúng, nhân viên sẽ được
+          chuyển vào các chức năng khác của ứng dụng. Ngược lại sẽ có lỗi đc báo
+          ra khi nhân viên nhập sai tên đăng nhập hoặc mật khẩu.
+        </p>
+        <img src="assets/TroGiup/eye.png" alt="" />
+        <p>
+          - Nút bên phải cạnh ô mật khẩu dùng để hiện mật khẩu khi người dùng
+          cần xem mật khẩu mình đã nhập.
+        </p>
+      </div>
+    </div>
+    <div id="employee" class="content">
+      <p class="content-title">2. Nhân viên</p>
+      <div class="content-section">
+        <p>
+          - Khi ấn vào nút nhân viên trên thanh menu, hệ thống sẽ mở ra giao
+          diện nhân viên. Tại đây quản lý có thể xem các nhân viên đang làm
+          trong cửa hàng cũng như thêm, sửa, xóa nhân viên trong cửa hàng.
+        </p>
+        <img width="60%" src="assets/TroGiup/Menu.png" alt="" />
+        <p>- Giao diện nhân viên khi được mở lên</p>
+        <img width="50%" src="assets/TroGiup/NhanVien.png" alt="" />
+        <p>
+          - Tại giao diện nhân viên người quản lý có thể thêm xóa sửa các nhân
+          viên, ngoài ra cũng có thể tìm kiếm nhân viên hay lọc nhân viên theo
+          các tiêu chí. Mặc định các ô chữ sẽ được khóa lại và chỉ được mở khi
+          quản lý cần thêm hay sửa nhân viên.
+        </p>
+        <p>
+          - Để thêm nhân viên, người quản lý chọn nút thêm, sau đó quản lý có
+          thể nhập vào các ô trống. Quản lý nhập đầy đủ thông tin, lựa chọn giới
+          tính, ngày tháng năm sinh, ngày nhân viên vào làm cũng như vị trí công
+          việc của nhân viên ngoại trừ email(email sẽ được tự động tạo trong quá
+          trình thêm), hệ thống cũng sẽ kiểm tra tính xác thực của dữ liệu(Số
+          điện thoại phải là số, nhân viên phải từ 18 tuổi trở lên, ngày vào làm
+          không được nhỏ hơn ngày hiện tại). Sau đó quản lý ấn nút lưu để thêm
+          mới nhân viên vào hệ thống, hoặc ấn nút hủy để hủy quá trình thêm nhân
+          viên, xóa trắng để xóa toàn bộ thông tin mà quản lý đã nhập.
+        </p>
+        <img width="50%" src="assets/TroGiup/ThemNhanVien.png" alt="" />
+        <p>
+          - Để sửa thông tin nhân viên quản lý cần chọn nhân viên cần sửa trên
+          bảng nhân viên, ấn nút sửa ở hàng nút bên phải. Quản lý nhập thông tin
+          mới của nhân viên thông qua các ô thông tin, ấn nút lưu để lưu thông
+          tin mới của nhân viên hay ấn nút hủy để hủy quá trình sửa thông tin
+          hay xóa trắng để xóa toàn bộ thông tin trong các ô thông tin.
+        </p>
+        <img width="50%" src="assets/TroGiup/SuaNhanVien.png" alt="" />
+        <p>
+          - Để xóa nhân viên khỏi hệ thống, quản lý chọn nhân viên cần xóa sau
+          đó ấn xóa. Hệ thống sẽ hiện ra thông báo xác nhận xóa nhân viên, quản
+          lý ấn nút đồng ý để xóa nhân viên khỏi hệ thống hay ấn nút hủy để hủy
+          quá trình xóa nhân viên.
+        </p>
+        <img width="50%" src="assets/TroGiup/XoaNhanVien.png" alt="" />
+        <p>
+          - Hệ thống cũng cung cấp cho quản lý các chức năng tìm kiếm và lọc
+          nhân viên. Để lọc nhân viên, quản lý chọn các tiêu chí lọc nhân viên
+          và ấn nút lọc. Hệ thống sẽ hiện ra danh sách nhân viên thỏa mãn các
+          tiêu chí lọc. Để tìm kiếm nhân viên, quản lý nhập thông tin cần tìm
+          kiếm vào ô tìm kiếm và ấn nút tìm kiếm. Hệ thống sẽ hiện ra danh sách
+          nhân viên thỏa mãn thông tin tìm kiếm.
+        </p>
+        <img width="50%" src="assets/TroGiup/LocNhanVien.png" alt="" />
+        <img width="50%" src="assets/TroGiup/TimKiemNhanVien.png" alt="" />
+      </div>
+    </div>
+
+    <div id="room" class="content">
+      <p class="content-title">3. Quản lý phòng</p>
+      <div class="content-section">
+        <p>
+          - Để quản lý các phòng hát trong quán Karaoke, quản lý cần chọn mục
+          phòng tại thanh menu. Hệ thống sẽ hiện ra danh sách các phòng hát hiện
+          có trong hệ thống. Quản lý có thể thêm, sửa, xóa phòng hát, tìm kiếm
+          phòng hát.
+        </p>
+        <img width="50%" src="assets/TroGiup/Phong.png" alt="" />
+        <p>
+          - Để thêm phòng hát mới, quản lý nhập các thông tin của phòng hát vào
+          các ô thông tin như chiều rộng, chiều cao, cùa phòng, loại phòng, sức
+          chứa, tên phòng, ...sau đó quản lý ấn nút thêm để thêm phòng vừa được
+          nhập vào hệ thống. Quản lý có thể ấn nút xóa form để xóa toàn bộ thông
+          tin trong các ô thông tin.
+        </p>
+        <img width="50%" src="assets/TroGiup/ThemPhong.png" alt="" />
+        <p>
+          - Để sửa thông tin của phòng hát, quản lý chọn phòng hát cần sửa sau
+          đó nhập thông tin mới của phòng hát vào các ô thông tin, ấn nút lưu để
+          lưu thông tin mới của phòng hát hay ấn nút hủy sửa để hủy quá trình
+          sửa thông tin hay xóa form để xóa toàn bộ thông tin trong các ô thông
+          tin.
+        </p>
+        <img width="50%" src="assets/TroGiup/SuaPhong.png" alt="" />
+        <p>
+          - Để xóa phòng hát, quản lý chọn phòng hát cần xóa sau đó ấn nút xóa.
+          Hệ thống sẽ hiện ra thông báo xác nhận xóa phòng hát, quản lý ấn nút
+          đồng ý để xóa phòng hát khỏi hệ thống hay ấn nút hủy để hủy quá trình
+          xóa phòng hát.
+        </p>
+        <img width="50%" src="assets/TroGiup/XoaPhong.png" alt="" />
+        <p>
+          - Hệ thống cũng cung cấp cho quản lý các chức năng tìm kiếm phòng hát.
+          Để tìm kiếm phòng hát, quản lý nhập thông tin cần tìm kiếm vào ô tìm
+          kiếm và ấn nút tìm kiếm. Hệ thống sẽ hiện ra danh sách phòng hát thỏa
+          mãn thông tin tìm kiếm.
+        </p>
+        <img width="50%" src="assets/TroGiup/TimPhong.png" alt="" />
+      </div>
+    </div>
+
+    <div id="customer" class="content">
+      <p class="content-title">4. Quản lý khách hàng</p>
+      <div class="content-section">
+        <p>
+          - Để mở giao diện quản lý khách hàng, nhân viên cần ấn nút khách hàng
+          ở menu. Sau đó giao diện quản lý khách hàng sẽ hiện ra như sau:
+        </p>
+        <img style="width: 50%" src="assets/TroGiup/KhachHang.png" alt="" />
+        <p>
+          - Giao diện hiên thị các khách hàng có trong hệ thống, các nút với
+          chức năng thêm xóa sửa khách hàng, các nút lọc và tìm kiếm khách hàng.
+        </p>
+        <p>
+          - Để thêm khách hàng, nhân viên nhập đầy đủ các thông tin của khách
+          hàng và nhấn nút thêm. Những thông tin như mã khách hàng, hạng thành
+          viên sẽ được hệ thống tự động tạo nhân viên sẽ không được nhập hoặc
+          chỉnh sửa những thông tin này. Sau đó ấn lưu để lưu thông tin khách
+          hàng vào trong hệ thống, nhân viên có thể ấn nút hủy để hủy thao tác
+          thêm khách hàng.
+        </p>
+        <img width="50%" src="assets/TroGiup/ThemKhachHang.png" alt="" />
+        <p>
+          - Tương tự như gia diện nhân viên, để sửa thông tin của một khách
+          hàng, nhân viên cần chọn 1 khách hàng cần sửa sau đó nhân viên nhập
+          các thông tin mới của khách hàng và ấn nút lưu để lưu các thông tin
+          sửa đổi. Nhân viên có thể ấn nút hủy để hủy thao tác sửa thông tin của
+          khách hàng.
+        </p>
+        <img width="50%" src="assets/TroGiup/SuaKhachHang.png" alt="" />
+        <p>
+          - Cũng giống như nhân viên, để xóa khách hàng, nhân viên cần chọn 1
+          khách hàng cần xóa sau đó ấn nút xóa. Xác nhận là Yes để xóa khách
+          hàng khỏi hệ thống. Ngược lại nếu chọn No thì quá trình xóa sẽ bị hủy.
+          Ngoài ra còn nút xóa trắng để xóa tất cả các thông tin đã nhập vào.
+        </p>
+        <img width="50%" src="assets/TroGiup/XoaKhachHang.png" alt="" />
+        <p>
+          Hơn nữa ứng dụng cũng cung cấp cho nhân viên chức năng lọc các khách
+          hàng theo giới tính và loại thành viên. Nhân viên chọn các tiêu chí và
+          ấn nút lọc sau đó hệ thống sẽ hiển thị ra các khách hàng theo tiêu chí
+          mà nhân viên đã chọn. Để tìm kiếm một khách hàng, nhân viên nhập tên
+          của khách hàng vào ô trống sau đó ấn nút tìm hệ thống sẽ hiển thị ra
+          thông tin của khách hàng mà nhân viên đã nhập tên.
+        </p>
+        <img width="50%" src="assets/TroGiup/LocKhachHang.png" alt="" />
+        <img width="50%" src="assets/TroGiup/TimKhachHang.png" alt="" />
+      </div>
+    </div>
+
+    <div id="bill" class="content">
+      <p class="content-title">5. Hóa đơn</p>
+      <div class="content-section">
+        <p>
+          - Hệ thống cũng lưu trữ các hóa đơn đã thanh toán. Để xem các hóa đơn
+          đã có trong hệ thống, nhân viên chọn mục hóa đơn trên thanh menu sau
+          đó hệ thống sẽ hiển thị giao diện hóa đơn. Giao diện bao gồm các hóa
+          đơn có trong hệ thống, các thông tin của hóa đơn được hiển thị đầy đủ
+          trong bảng hóa đơn thông qua các cột thông tin.
+        </p>
+        <img width="50%" src="assets/TroGiup/HoaDon.png" alt="" />
+        <p>
+          - Nhân viên cũng có thể tìm kiếm hóa đơn thông qua mã hóa đơn. Nhân
+          viên nhập mã hóa đơn ở thanh tìm kiếm và ấn nút tìm kiếm. Hệ thống sẽ
+          hiển thị ra thông tin của hóa đơn mà nhân viên đã nhập. Hoặc nhân viên
+          có thế chọn ngày lập hóa đơn để lọc hóa đơn theo ngày lập.
+        </p>
+        <img width="50%" src="assets/TroGiup/TimHoaDon.png" alt="" />
+      </div>
+    </div>
+
+    <div id="analys" class="content">
+      <p class="content-title">6. Thống kê</p>
+      <div class="content-section">
+        <p>
+          - Để thống kê hệ thống cung cấp các chứng năng thống kê có thể thống
+          kê theo doanh thu , khách hàng hoặc dịch vụ. <br />
+          - Để mở giao diện thống kê nhân viên mở mục thống kê trên thanh menu
+          sau đó hệ thống sẽ hiển thị giao diện thống kê. Giao diện bao gồm các
+          ô checkbox để nhân viên chọn các tiêu chí muốn thống kê. Sau đó nhân
+          viên chọn nút thống kê hệ thống sẽ hiển thị ra các biểu đồ thống kê
+          theo các tiêu chí mà nhân viên đã chọn.
+        </p>
+        <img
+          style="width: 50%; height: 50%"
+          src="assets/TroGiup/thongke1.png"
+          alt=""
+        />
+        <p>- Các dạng của thống kê được hiển thị như sau:</p>
+        <p>+ Thống kê doanh thu theo ngày dạng biểu đồ cột</p>
+        <img
+          style="width: 50%; height: 50%"
+          src="assets/TroGiup/thongke2.png"
+          alt=""
+        />
+        <p>+ Thống kê doanh thu theo ngày dạng biểu đồ núi</p>
+        <img
+          style="width: 50%; height: 50%"
+          src="assets/TroGiup/thongke3.png"
+          alt=""
+        />
+        <p>+ Thống kê doanh thu theo ngày dạng chi tiết</p>
+        <img
+          style="width: 50%; height: 50%"
+          src="assets/TroGiup/thongke4.png"
+          alt=""
+        />
+        <p>+ Thống kê doanh thu theo tháng dạng cột</p>
+        <img
+          style="width: 50%; height: 50%"
+          src="assets/TroGiup/thongke5.png"
+          alt=""
+        />
+        <p>+ Thống kê doanh thu theo tháng dạng núi</p>
+        <img
+          style="width: 50%; height: 50%"
+          src="assets/TroGiup/thongke6.png"
+          alt=""
+        />
+        <p>+ Thống kê doanh thu theo tháng chi tiết</p>
+        <img
+          style="width: 50%; height: 50%"
+          src="assets/TroGiup/thongke7.png"
+          alt=""
+        />
+        <p>+Thống kê doanh thu theo năm dạng cột</p>
+        <img
+          style="width: 50%; height: 50%"
+          src="assets/TroGiup/thongke8.png"
+          alt=""
+        />
+        <p>+Thống kê doanh thu theo năm dạng núi</p>
+        <img
+          style="width: 50%; height: 50%"
+          src="assets/TroGiup/thongke9.png"
+          alt=""
+        />
+        <p>+Thống kê doanh thu theo năm chi tiết</p>
+        <img
+          style="width: 50%; height: 50%"
+          src="assets/TroGiup/thongke10.png"
+          alt=""
+        />
+        <p>+Thống kê số lượng khách hàng theo tháng</p>
+        <img
+          style="width: 50%; height: 50%"
+          src="assets/TroGiup/thongke11.png"
+          alt=""
+        />
+        <p>+ Thống kê số lượng khách hàng chi tiết</p>
+        <img
+          style="width: 50%; height: 50%"
+          src="assets/TroGiup/thongke12.png"
+          alt=""
+        />
+        <p>+ Thống kê số lượt sử dụng từng dịch vụ</p>
+        <img
+          style="width: 50%; height: 50%"
+          src="assets/TroGiup/thongke13.png"
+          alt=""
+        />
+        <p>+ Thống kê số lượng dịch vụ sử dụng từng phòng</p>
+        <img
+          style="width: 50%; height: 50%"
+          src="assets/TroGiup/thongke14.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div id="assignment" class="content">
+      <p class="content-title">7. Phân công</p>
+      <div class="content-section">
+        <p>
+          - Ứng dụng cũng cung cấp chức năng quản lý ca làm việc cho nhân viên.
+          Để phân công cho nhân viên quản lý cần chọn chức năng phân công ở
+          menu. Sau đó hệ thống hiển thị màn hình phân công ca làm.
+        </p>
+        <img
+          style="width: 50%; height: 50%"
+          src="assets/TroGiup/phanCong.png"
+          alt=""
+        />
+        <p>
+          - Quản lý chọn nhân viên cần phân công, chọn ca trực cần phân công và
+          chọn ngày cần phân công. Sau đó nhấn nút thêm.
+        </p>
+        <img width="50%" src="assets/TroGiup/ThemCaTruc.png" alt="" />
+        <p>
+          - Để chỉnh sửa ca trực quản lý chọn nhân viên đẫ được phân công ở bảng
+          sau đó chọn thông tin cần sửa. Sau đó nhấn nút sửa. Hệ thống sẽ cập
+          nhật lại thông tin mà nhân viên đã chọn.
+        </p>
+        <img width="50%" src="assets/TroGiup/SuaCaTruc.png" alt="" />
+        <p>
+          - Tương tự như sửa ca trực, để xóa ca trực quản lý chọn nhân viên đẫ
+          được phân công ở bảng sau đó chọn thông tin cần xóa. Sau đó nhấn nút
+          xóa và xác nhận. Hệ thống sẽ xóa ca trực mà nhân viên đã được phân ca
+          trước đó.
+        </p>
+        <img width="50%" src="assets/TroGiup/XoaCaTruc.png" alt="" />
+        <p>
+          - Quản lý cũng có thể lọc các ca trực của nhân viên để dễ dàng kiểm
+          soát hơn. Để lọc các ca trực nhân viên cần chọn các tiêu chí cần lọc
+          và nhấn nút lọc. Hệ thống sẽ lọc ra các ca trực của nhân viên theo các
+          tiêu chí đã chọn.
+        </p>
+        <img width="50%" src="assets/TroGiup/LocCaTruc.png" alt="" />
+      </div>
+    </div>
+
+    <div id="order" class="content">
+      <p class="content-title">8. Đặt phòng</p>
+      <div class="content-section">
+        <p>
+          - Để quản lý các phòng hoạt động của quán, cũng như việc đặt phòng cho
+          khách hàng ứng dụng có cung cấp chức năng đặt phòng cũng như quản lý
+          các phòng cuả quán karaoke. Để mở giao diện này nhân viên chọn mục đặt
+          phòng trên thanh menu. Hệ thống sẽ hiển thị giao diện đặt phòng.
+        </p>
+        <img width="50%" src="assets/TroGiup/DatPhong.png" alt="" />
+        <p>
+          - Để đặt phòng nhân viên cần nhập thông tin đặt phòng ở bên phải. Ấn
+          nút đặt phòng để hiển thị ra form đặt phòng trên giao diện. Sau đó
+          nhân viên chọn các thông tin đặt phòng như: chọn giờ đặt phòng, chọn
+          phòng mà khách hàng cần đặt.
+        </p>
+        <img width="20%" src="assets/TroGiup/ChonThongTin.png" alt="" />
+        <p>
+          - Sau đó nhân viên nhập thông tin số điện thoại của khách hàng cần
+          đặt, nếu khách hàng là 1 thành viên của quán thì hệ thống sẽ hiển thị
+          ra thông tin của khách hàng đang có trong hệ thống.
+        </p>
+        <img width="20%" src="assets/TroGiup/ThongTinKhachHang.png" alt="" />
+        <p>
+          - Nếu khách hàng không có trong hệ thống thì hệ thống sẽ hiển thị như
+          hình dưới đây
+        </p>
+        <img width="20%" src="assets/TroGiup/ThongTinKhachVanLai.png" alt="" />
+        <p>
+          - Khi khách hàng không có trong hệ thống nhưng muốn đặt phòng, nhân
+          viên sẽ được chuyển sang màn hinh thêm khách hàng để thêm nhanh khách
+          hàng thì mới có thế tiếp tục đặt phòng cho khách hàng.
+        </p>
+        <p>Sau đó nhân viên ấn đặt phòng để đặt phòng cho khách hàng.</p>
+        <img width="50%" src="assets/TroGiup/DatThanhCong.png" alt="" />
+        <p>
+          - Ở phần dưới thông tin đặt phòng là danh sách các phòng đang được
+          đặt, nếu phòng được đặt thành công thì nó sẽ hiển thị ở danh sách này.
+          Khi nhân viên cần xóa phòng đặt thì nhân viên chọn phòng đó và ấn dấu
+          X ở trong danh sách phòng đang được đặt. Hệ thống sẽ hiển thị thông
+          báo xác nhận xóa phòng đặt. Nhân viên ấn đồng ý để xóa phòng đặt. Nếu
+          nhân viên không muốn xóa phòng đặt thì nhân viên ấn hủy.
+        </p>
+        <img width="50%" src="assets/TroGiup/HuyDatPhong.png" alt="" />
+        <p>
+          - Khi khách hàng yêu cầu thay đổi phòng đặt thì nhân viên cần phải
+          nhập số điện thoại của khách hàng vào ô số điện thoại, sau đó nhân
+          viên ấn enter, hệ thống sẽ hiển thị ra danh sách các phòng đang được
+          đặt có số điện thoại trùng với khách hàng yêu cầu đổi phòng. Sau đó
+          nhân viên sửa đổi thông tin đặt phòng theo yêu cầu của khách hàng và
+          ấn nút sửa.
+        </p>
+        <img width="50%" src="assets/TroGiup/SuaDatPhong.png" alt="" />
+        <img width="50%" src="assets/TroGiup/SuaDatPhongThanhCong.png" alt="" />
+        <p>
+          - Nhân viên cũng có thế chuyển phòng cho khách hàng khi khách hàng yêu
+          cầu. Nhân viên chọn chức năng chuyển phòng sau đó nhân viên chọn phòng
+          của khách hàng, sau đó chọn phòng cần đổi tới. Và ấn chuyển phòng.
+        </p>
+        <img width="50%" src="assets/TroGiup/ChuyenPhong.png" alt="" />
+        <p>
+          - Phòng của khách hàng của nhân viên sẽ được chuyển sang phòng mới kèm
+          theo các dịch vụ và giờ hát.
+        </p>
+        <p>
+          - Nhân viên cũng có thể đặt nhanh cho nhiều phòng cho khách hàng nhân
+          viên chọn chức năng đặt nhanh, nhân viên nhập số điện thoại của khách
+          hàng, sau đó ấn enter nếu khách hàng có trong hệ thống thì tên khách
+          hàng sẽ tự động hiện ra nếu không thì nhân viên cần phải nhập tên của
+          khách hàng. Nhân viên chọn loại phòng cần đặt sau đó nhân viên lần
+          lượt chọn các phòng mà khách hàng muốn đặt. Sau đó nhân viên ấn nút
+          đăng ký để bắt đầu sử dụng phòng.
+        </p>
+        <img width="50%" src="assets/TroGiup/DatPhongNhanh.png" alt="" />
+        <p>
+          - Ở bên phải màn hình nhân viên có thể thấy các phòng ở trong cửa hàng
+          với các trạng thái như còn trống, đang được đặt. đang sử dụng. Nhân
+          viên có thể theo dõi tình hình các phòng thông qua màu sắc. Và có 2
+          loại phòng ở trong cửa hàng là phòng thường và phòng VIP. Nhân viên có
+          thế chuyển giữa 2 loại phòng bằng cách ấn nút phòng thường hoặc phòng
+          VIp. Hệ thống sẽ tự động chuyển đổi 2 loại phòng này.
+        </p>
+        <img width="50%" src="assets/TroGiup/DanhSachPhong.png" alt="" />
+        <p>
+          - Phòng trống được hiển thị là màu vàng. Nhân viên có thế bắt đầu sử
+          dụng nhanh phòng này cho khách hàng bằng cách ấn vào phòng sau đó bắt
+          đầu sử dụng phòng này. Phòng sẽ được cập nhật lại trên hệ thống thành
+          màu xanh tương đương với phòng đang hoạt động.
+        </p>
+        <img width="50%" src="assets/TroGiup/SuDungPhong.png" alt="" />
+        <p>
+          - Phòng màu đỏ là phòng được đặt trước. Nhân viên ấn vào phòng để xem
+          thông tin của khách hàng đặt trước. Để sử dụng phòng khu khách hàng
+          đến quán nhân viên chỉ cần ấn nút sử dụng ở bên dưới. Phòng sẽ được
+          cập nhật lại trên hệ thống thành màu xanh tương đương với phòng đang
+          hoạt động.
+        </p>
+        <img width="50%" src="assets/TroGiup/ThongTinKHDatPhong.png" alt="" />
+        <p>
+          Phòng màu xanh là phòng đang hoạt động. Nhân viên có thể ấn vào phòng
+          để xem thông tin sử dụng phòng của khách hàng. Hệ thống cũng có thế
+          thêm các dịch vụ của quán cho khách hàng bằng cách ấn các dịch vụ ở
+          bên phải màn hình. Dịch vụ sẽ được thêm vào phòng và tính toán trong
+          hóa đơn của khách hàng. Nhân viên ấn cập nhật dịch vụ để lưu lại các
+          dịch vụ vừa thêm. Và để thanh toán phòng thì nhân viên cần mở phòng
+          lên sau đó chọn nút thanh toán. Hệ thống sẽ tự động tính toán hóa đơn
+          sau đó hệ thống sẽ lưu trữ hóa đơn dưới dạng pdf và in ra cho khách
+          hàng.
+        </p>
+        <img width="50%" src="assets/TroGiup/ThemDichVuPhong.png" alt="" />
+        <p>
+          - Nhân viên có thể thanh toán nhanh cho phòng bằng cách chọn chức năng
+          thanh toán nhanh sau đó nhập số điện thoại của khách hàng. Hệ thống sẽ
+          tự động tìm kiếm khách hàng và hiển thị ra các phòng có số điện thoại
+          trùng với số điện thoại khách hàng nhập vào. Nhân viên chỉ cần chọn
+          phòng và ấn nút thanh toán. Hệ thống sẽ thanh toán toàn bộ phòng mà
+          khách hàng đó đang sử dụng.
+        </p>
+        <img width="50%" src="assets/TroGiup/ThanhToanNhanh.png" alt="" />
+      </div>
+    </div>
+
+    <div id="service" class="content">
+      <p class="content-title">8. Dịch vụ</p>
+      <div class="content-section">
+        <p>
+          - Ứng dụng cũng cung cấp các chức năng quản lý dịch vụ cơ bản như thêm
+          xóa sửa tìm kiếm hoặc lọc các dịch vụ trong cửa hàng. Để mở giao diện
+          quản lý dịch vụ, nhân viên chọn mục Dịch vụ trên thanh menu, sau đó hệ
+          thống hiển thị giao diện quản lý dịch vụ.
+        </p>
+        <img style="width: 50%" src="assets/TroGiup/DichVu.png" alt="" />
+        <p>
+          - Để thêm mới một dịch vụ, nhân viên cần phải nút thêm, sau đó nhân
+          viên nhập các thông tin như tên dịch vụ, giá dịch vụ, số lượng dịch
+          vụ, chọn hình ảnh bằng cách ấn nút kế chữ hình ảnh, chọn ảnh của dịch
+          vụ, sau đó nhân viên chọn nút lưu để lưu lại dịch vụ mới. Hoặc nhân
+          viên có thể nhấn nút hủy để hủy bỏ thao tác thêm mới dịch vụ. Ấn nút
+          xóa trắng để xóa toàn bộ thông tin đã nhập.
+        </p>
+        <img width="50%" src="assets/TroGiup/ThemDichVu.png" alt="" />
+        <p>
+          - Để sửa một dịch vụ, nhân viên cần phải chọn dịch vụ cần sửa ở bảng
+          dịch vụ, sau đó ấn nút sửa, nhập các thông tin mới hoặc chọn hình ảnh
+          mới nếu cần, ấn nút lưu để lưu thông tin dịch vụ mới. Hoặc nhân viên
+          có thể ấn nút hủy để hủy bỏ thao tác sửa dịch vụ. Ấn nút xóa trắng để
+          xóa toàn bộ thông tin của dịch vụ.
+        </p>
+        <img width="50%" src="assets/TroGiup/SuaDichVu.png" alt="" />
+        <p>
+          - Để xóa một dịch vụ, nhân viên cần phải chọn dịch vụ cần xóa ở bảng
+          dịch vụ, sau đó ấn nút xóa, hệ thống sẽ hiển thị thông báo xác nhận
+          xóa, nhân viên chọn nút đồng ý để xóa dịch vụ. Hoặc nút không để hủy
+          quá trình xóa dịch vụ.
+        </p>
+        <img width="50%" src="assets/TroGiup/XoaDichVu.png" alt="" />
+        <p>
+          - Để tìm kiếm một dịch vụ, nhân viên cần phải nhập thông tin cần tìm
+          kiếm vào ô tìm kiếm, sau đó nhân viên ấn nút tìm kiếm, hệ thống sẽ
+          hiển thị danh sách các dịch vụ có thông tin tương tự với thông tin tìm
+          kiếm.
+        </p>
+        <img width="50%" src="assets/TroGiup/TimDichVu.png" alt="" />
+        <p>
+          - Hệ thống cung cấp cho nhân viên chức năng lọc theo giá dịch vụ. Để
+          lọc theo giá nhân viên chọn giá ở 2 ô giá tiền bắt đầu và giá tiền kết
+          thúc, sau đó nhân viên ấn nút lọc, hệ thống sẽ hiển thị danh sách các
+          dịch vụ có giá trong khoảng giá đã chọn.
+        </p>
+        <img width="50%" src="assets/TroGiup/LocDichVu.png" alt="" />
+      </div>
+    </div>
+
+    <div class="to-header">
+      <a href="#header"><i class="fa-sharp fa-solid fa-circle-up"></i></a>
+    </div>
+
+    <footer id="footer">
+      <p style="font-size: 25px">Ứng dụng quản lý Karaoke Nnice</p>
+      <h4 style="font-weight: 300">Phiên bản: 16.12.2022</h4>
+      <p style="font-size: 20px">Đội ngũ phát triển:</p>
+      <h4 style="font-weight: 300">
+        Nguyễn Xuân Long - 20075751 - Facilitator
+      </h4>
+      <h4 style="font-weight: 300">Nguyễn Văn Thuận - 20069161 - Note Taker</h4>
+      <h4 style="font-weight: 300">Nguyễn Đức Tài -20077681 - Reporter</h4>
+      <h4 style="font-weight: 300">Lê Quốc Phòng - 20070031 - Time Keeper</h4>
+      <p style="font-size: 20px">Bản quyền</p>
+      <span
+        >© 2022 - 2023 - Bản quyền thuộc về nhóm 12 - Phát triển ứng dụng</span
+      >
+    </footer>
+  </body>
+</html>
